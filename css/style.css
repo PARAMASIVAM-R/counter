@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+}
+:root{
+    --color:rgb(250, 250, 250) ;
+}
+.frame{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+    gap: 15px;
+    background: linear-gradient(rgba(0, 0, 0, 0.61),
+                                rgba(0, 0, 0, 0.733)),
+                                url('../image/celebration.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.coundown{
+    font-size: 22px;
+    letter-spacing: 1px;
+    transition: 0.2;
+}
+.counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px 50px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.66);
+    box-shadow: 0px 0px 15px 5px rgb(255, 247, 247);
+    border-radius: 6px;
+    user-select: none;
+    transition: all 0.2s ease-in-out;  
+}
+.counter .box{
+    height: 30px;
+    width: 50px;
+    text-align: center;
+    margin-bottom: 13px;  
+}
+.counter h2{
+    font-size: 32x;
+    letter-spacing: 2px;
+    color: var(--color);
+    cursor: pointer;
+}
+.counter small{
+    font-size: 18px;
+    color: var(--color);
+    font-weight:bold;
+    cursor: pointer;
+}
+.function{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    letter-spacing: 3px;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(237, 249, 8);
+    text-transform: uppercase;
+    cursor: pointer; 
+}
+p{
+    font-size: 18px;
+    cursor: pointer; 
+}
+.button{
+    background-color: rgba(87, 85, 85, 0.432);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+.button .getValue,.getReset{
+  background-color:orangered;
+  padding: 5px 11px;
+  border-radius: 6px;
+}
+
+@media (max-width:992px) {
+    .function{
+        font-size: 20px;
+    } 
+    p{
+        font-size: 15px;      
+    }
+    .counter{
+        gap: 40px;
+    }
+    .coundown{
+        font-size: 16px;
+    }
+}
